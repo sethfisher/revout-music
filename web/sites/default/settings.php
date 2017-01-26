@@ -33,6 +33,11 @@ $settings['file_scan_ignore_directories'] = [
   'bower_components',
 ];
 
+/**
+ * Configuration sync directory
+ */
+$config_directories['sync'] = '../config/sync';
+
 $settings['install_profile'] = 'standard';
 
 /**
