@@ -1,4 +1,4 @@
-uuid: 77f0c679-d00b-4492-9bb9-9269e32e1e93
+uuid: b5f0b004-91a1-4a2f-bea4-bfea0b69694e
 langcode: en
 status: true
 dependencies:
@@ -14,10 +14,10 @@ bundle: song
 label: Rating
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
-    rating: '0'
+    rating: '100'
     target: null
 default_value_callback: ''
 settings:
@@ -25,6 +25,6 @@ settings:
   allow_clear: 1
   allow_revote: 1
   allow_ownvote: 1
-  rated_while: editing
+  rated_while: viewing
   target: ''
 field_type: fivestar
