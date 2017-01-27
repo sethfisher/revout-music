@@ -1,0 +1,26 @@
+uuid: fdee8f72-b386-49d1-8e70-bd46e2313778
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: album_rankings
+label: 'Album Rankings'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      album: album
+    sort:
+      field: field_artist
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false

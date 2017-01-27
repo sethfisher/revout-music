@@ -1,0 +1,25 @@
+uuid: 16037702-e2ff-405f-aaea-9a925bf25773
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: artist_rankings
+label: 'Artist Rankings'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      artist: artist
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false
