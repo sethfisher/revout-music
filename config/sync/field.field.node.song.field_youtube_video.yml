@@ -1,0 +1,21 @@
+uuid: 99391ebc-b1b3-45aa-8133-7cea38dd980c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youtube_video
+    - node.type.song
+  module:
+    - youtube
+id: node.song.field_youtube_video
+field_name: field_youtube_video
+entity_type: node
+bundle: song
+label: 'YouTube Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: youtube
