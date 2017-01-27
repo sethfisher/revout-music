@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.node.song.body
     - field.field.node.song.field_disc
+    - field.field.node.song.field_rating
     - field.field.node.song.field_track
     - node.type.song
   module:
+    - fivestar
     - path
     - text
 id: node.song.default
@@ -34,6 +36,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+  field_rating:
+    weight: 34
+    settings:
+      fivestar_widget: modules/fivestar/widgets/basic/basic.css
+    third_party_settings: {  }
+    type: fivestar_stars
   field_track:
     weight: 32
     settings:

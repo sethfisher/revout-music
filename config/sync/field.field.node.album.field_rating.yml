@@ -1,0 +1,30 @@
+uuid: 4a5a42f2-5ad3-43ca-b5e1-4d45347742b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rating
+    - node.type.album
+  module:
+    - fivestar
+id: node.album.field_rating
+field_name: field_rating
+entity_type: node
+bundle: album
+label: Rating
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    rating: '0'
+    target: null
+default_value_callback: ''
+settings:
+  stars: '10'
+  allow_clear: 1
+  allow_revote: 1
+  allow_ownvote: 1
+  rated_while: editing
+  target: ''
+field_type: fivestar

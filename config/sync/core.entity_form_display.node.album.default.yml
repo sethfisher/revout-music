@@ -6,12 +6,14 @@ dependencies:
     - field.field.node.album.body
     - field.field.node.album.field_artist
     - field.field.node.album.field_image
+    - field.field.node.album.field_rating
     - field.field.node.album.field_release_date
     - field.field.node.album.field_songs
     - image.style.thumbnail
     - node.type.album
   module:
     - datetime
+    - fivestar
     - image
     - path
     - text
@@ -48,6 +50,12 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+  field_rating:
+    weight: 36
+    settings:
+      fivestar_widget: modules/contrib/fivestar/widgets/basic/basic.css
+    third_party_settings: {  }
+    type: fivestar_stars
   field_release_date:
     weight: 33
     settings: {  }

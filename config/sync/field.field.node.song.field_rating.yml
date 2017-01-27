@@ -1,0 +1,30 @@
+uuid: 77f0c679-d00b-4492-9bb9-9269e32e1e93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rating
+    - node.type.song
+  module:
+    - fivestar
+id: node.song.field_rating
+field_name: field_rating
+entity_type: node
+bundle: song
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    rating: '0'
+    target: null
+default_value_callback: ''
+settings:
+  stars: '10'
+  allow_clear: 1
+  allow_revote: 1
+  allow_ownvote: 1
+  rated_while: editing
+  target: ''
+field_type: fivestar

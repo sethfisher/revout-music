@@ -6,11 +6,13 @@ dependencies:
     - field.field.node.album.body
     - field.field.node.album.field_artist
     - field.field.node.album.field_image
+    - field.field.node.album.field_rating
     - field.field.node.album.field_release_date
     - field.field.node.album.field_songs
     - node.type.album
   module:
     - datetime
+    - fivestar
     - image
     - text
     - user
@@ -40,6 +42,13 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+  field_rating:
+    weight: 106
+    label: above
+    settings:
+      fivestar_widget: modules/fivestar/widgets/basic/basic.css
+    third_party_settings: {  }
+    type: fivestar_stars
   field_release_date:
     weight: 103
     label: above
