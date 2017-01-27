@@ -1,0 +1,22 @@
+uuid: 4b7855c1-9e17-4e5d-b7a5-ba2a852db5a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.song
+  module:
+    - text
+id: node.song.body
+field_name: body
+entity_type: node
+bundle: song
+label: 'Song Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,18 @@
+uuid: a056846d-5cea-4d66-aaaf-21926cf8a375
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.artist
+id: node.artist.title
+field_name: title
+entity_type: node
+bundle: artist
+label: 'Artist Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 160b0f1d-f19e-4aaa-8078-fdc8513b5a4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_track
+    - node.type.song
+id: node.song.field_track
+field_name: field_track
+entity_type: node
+bundle: song
+label: Track
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

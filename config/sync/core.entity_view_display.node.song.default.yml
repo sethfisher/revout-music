@@ -1,0 +1,42 @@
+uuid: fa553f09-df59-4ad2-a2a1-2abfb4b2b902
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.song.body
+    - field.field.node.song.field_disc
+    - field.field.node.song.field_track
+    - node.type.song
+  module:
+    - text
+    - user
+id: node.song.default
+targetEntityType: node
+bundle: song
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_disc:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_track:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  links:
+    weight: 100
+hidden: {  }

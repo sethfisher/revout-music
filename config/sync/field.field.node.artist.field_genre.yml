@@ -1,0 +1,28 @@
+uuid: cb12ca8a-1ee9-44a2-9626-f4d15e233adf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_genre
+    - node.type.artist
+    - taxonomy.vocabulary.genre
+id: node.artist.field_genre
+field_name: field_genre
+entity_type: node
+bundle: artist
+label: Genre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      genre: genre
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

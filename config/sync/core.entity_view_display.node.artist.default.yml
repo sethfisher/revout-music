@@ -1,0 +1,42 @@
+uuid: efb714f8-4e55-4f42-b271-ac49cd0012cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.artist.body
+    - field.field.node.artist.field_genre
+    - field.field.node.artist.field_image
+    - node.type.artist
+  module:
+    - image
+    - text
+    - user
+id: node.artist.default
+targetEntityType: node
+bundle: artist
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_genre:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 100
+hidden: {  }

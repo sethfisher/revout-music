@@ -1,0 +1,23 @@
+uuid: e497e55e-1a89-46c4-a556-b4e594f930f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disc
+    - node.type.song
+id: node.song.field_disc
+field_name: field_disc
+entity_type: node
+bundle: song
+label: Disc
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
