@@ -20,3 +20,6 @@ web/sites/default/settings.local.php
 
 # Ignore site folders created by DD
 web/sites/*.dd
+
+# Ignore Sublime Text project files
+web/*sublime-*
