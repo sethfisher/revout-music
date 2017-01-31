@@ -27,7 +27,6 @@ module:
   help: 0
   history: 0
   image: 0
-  import_lastfm: 0
   inline_entity_form: 0
   link: 0
   menu_ui: 0
