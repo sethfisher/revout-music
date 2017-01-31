@@ -1,0 +1,21 @@
+uuid: 75da198f-1592-4d91-8925-c39dec0970b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_music_brainz_id
+field_name: field_music_brainz_id
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

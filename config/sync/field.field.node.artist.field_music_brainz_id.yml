@@ -1,0 +1,19 @@
+uuid: a564b4aa-f933-4400-afc3-7a9e1776d139
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_music_brainz_id
+    - node.type.artist
+id: node.artist.field_music_brainz_id
+field_name: field_music_brainz_id
+entity_type: node
+bundle: artist
+label: 'Music Brainz ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

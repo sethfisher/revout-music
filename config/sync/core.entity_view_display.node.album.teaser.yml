@@ -23,4 +23,9 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_artist: true
+  field_image: true
+  field_rating: true
+  field_release_date: true
+  field_songs: true

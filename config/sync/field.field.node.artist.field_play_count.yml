@@ -1,0 +1,23 @@
+uuid: 54a35361-c8f9-43c9-838b-7ab11b6d8b70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_play_count
+    - node.type.artist
+id: node.artist.field_play_count
+field_name: field_play_count
+entity_type: node
+bundle: artist
+label: 'Play Count'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

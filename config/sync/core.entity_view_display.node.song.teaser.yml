@@ -23,4 +23,8 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_disc: true
+  field_rating: true
+  field_track: true
+  field_youtube_video: true

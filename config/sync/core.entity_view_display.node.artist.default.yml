@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.artist.body
     - field.field.node.artist.field_genre
     - field.field.node.artist.field_image
+    - field.field.node.artist.field_music_brainz_id
+    - field.field.node.artist.field_play_count
     - node.type.artist
   module:
     - image
@@ -37,6 +39,21 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+  field_music_brainz_id:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_play_count:
+    weight: 104
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
   links:
     weight: 100
 hidden: {  }
