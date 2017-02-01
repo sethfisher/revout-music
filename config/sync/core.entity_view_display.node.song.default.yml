@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.song.body
-    - field.field.node.song.field_disc
     - field.field.node.song.field_rating
     - field.field.node.song.field_track
     - field.field.node.song.field_youtube_video
@@ -25,14 +24,6 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
-  field_disc:
-    weight: 103
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
   field_rating:
     weight: 104
     label: above
